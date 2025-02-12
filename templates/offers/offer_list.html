@@ -24,6 +24,7 @@
                         <th scope="col">Customer</th>
                         <th scope="col">Date</th>
                         <th scope="col">Total</th>
+                        <th scope="col">Created by</th>
                         <th scope="col">Actions</th>
                     </tr>
                 </thead>
@@ -34,7 +35,7 @@
                         <td>{{ offer.customer.name }}</td>
                         <td>{{ offer.date }}</td>
                         <td>${{ offer.total }}</td>
-                        <td>${{ offer.created_by }}</td>
+                        <td>{{ offer.created_by }}</td>
                         <td>
                             <div class="btn-group" role="group">
                                 <a href="{% url 'offer_detail' offer.id %}" class="btn btn-sm btn-outline-secondary">
